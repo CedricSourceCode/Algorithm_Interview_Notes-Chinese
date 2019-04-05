@@ -213,19 +213,19 @@ Index
 **支持度**（Support）
 - X → Y 的支持度表示项集 {X,Y} 在总项集中出现的概率
 
-    <div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=Support(X\rightarrow&space;Y)=\frac{P(X\cup&space;Y)}{P(I)}=\frac{\text{num}(X\cup&space;Y)}{\text{num}(I)}"><img src="../_assets/公式_20180620204006.png" height="" /></a></div>
+    <div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=Support(X\rightarrow&space;Y)=\frac{P(X\cap&space;Y)}{P(I)}=\frac{\text{num}(X\cap&space;Y)}{\text{num}(I)}"><img src="../_assets/公式_20180620204006.png" height="" /></a></div>
 
 - 其中，I 表示总事务集，`num()`表示事务集中特定项集出现的次数，`P(X)=num(X)/num(I)`
 
 **置信度**（Confidence）
 - X → Y 的置信度表示在先决条件 X 发生的情况下，由规则 X → Y 推出 Y 的概率。
 
-    <div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=Confidence(X\rightarrow&space;Y)=P(Y|X)=\frac{P(X\cup&space;Y)}{P(X)}=\frac{\text{num}(X\cup&space;Y)}{\text{num}(X)}"><img src="../_assets/公式_20180620205055.png" height="" /></a></div>
+    <div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex=Confidence(X\rightarrow&space;Y)=P(Y|X)=\frac{P(X\cap&space;Y)}{P(X)}=\frac{\text{num}(X\cap&space;Y)}{\text{num}(X)}"><img src="../_assets/公式_20180620205055.png" height="" /></a></div>
 
 **提升度**（Lift）
 - X → Y 的提升度表示含有X的条件下，同时含有Y的概率，与Y总体发生的概率之比。
 
-    <div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex={\displaystyle&space;{\begin{aligned}&space;Lift(X\rightarrow&space;Y)&=\frac{P(Y|X)}{P(Y)}=\frac{Confidence(X\rightarrow&space;Y)}{\text{num}(Y)/\text{num}(I)}\\&space;&=\frac{P(X\cup&space;Y)}{P(X)P(Y)}=\frac{\text{num}(X\cup&space;Y)\text{num}(I)}{\text{num}(X)\text{num}(Y)}&space;\end{aligned}}}"><img src="../_assets/公式_20180620213601.png" height="" /></a></div>
+    <div align="center"><a href="http://www.codecogs.com/eqnedit.php?latex={\displaystyle&space;{\begin{aligned}&space;Lift(X\rightarrow&space;Y)&=\frac{P(Y|X)}{P(Y)}=\frac{Confidence(X\rightarrow&space;Y)}{\text{num}(Y)/\text{num}(I)}\\&space;&=\frac{P(X\cap&space;Y)}{P(X)P(Y)}=\frac{\text{num}(X\cap&space;Y)\text{num}(I)}{\text{num}(X)\text{num}(Y)}&space;\end{aligned}}}"><img src="../_assets/公式_20180620213601.png" height="" /></a></div>
 
 规则的有效性：
 ---
